@@ -1,0 +1,44 @@
+body {
+    background: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.intro {
+    display: flex;
+    color: #fff;
+   justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+}  
+h1 {
+    align-items: center;
+    margin: 10em 0 0;
+    }
+.typping {
+    margin-left: 10px;
+    position: relative;
+    transition: 2s all ease;
+    color: burlywood;
+}
+.typping::after {
+content: '';
+position: absolute;
+width: 1px;
+height: 80%;
+right: -10px;
+/* animation-name: blind; */
+border-right: 2px solid white;
+animation: blind 0.5s infinite ease;
+}
+@keyframes blind {
+0%{
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+
+}
